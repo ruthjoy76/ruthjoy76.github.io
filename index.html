@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>RJ Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RJ Portfolio</title>
+   
 </head>
 <body>
   <!----Header Section-->
   <div class="container">
     <header>
-      <h1>RJ</h1>
-    
-      <nav>
-          <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact Me">Contact Me</a></li>
-          </ul>
-      </nav>
+  
+      <<!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">RJ</h1>
+      <ul class="nav-links">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li class="ctn"><a  href="#contact Me">Contact</a></li>
+      </ul>
+     <div class="mobile-nav">
+      <img src="/images/menu-btn.png" alt="" class="menu-btn">
+      <h1 class="close-btn">X</h1>
+     </div>
+  </nav>
+
+    <div class="home-content" id="home">
+      <h2>Hi, <span>there!</span></h2>
+      <h3>I'm Ruth Joy Tolentino</h3>
+      <h4>As Frontend Web Developer</h4>
+        <p>Are you looking for a Web developer who produces exceptional work and can make a significant impact on your project? As a self-starter with favorable experience, you can count on my commitment to your success. I love working with a team.</p>
+          <a href="/images/Ruth Joy Tolentino Resume.svg" class="ctn">Get Started</a>
+        </div>
     </header>
 
-       <!----Hero Section-->
-    <section class="home" id="home" >
-      <div class="home-content">
-        <h2>Hi, <span>there!</span> </h2>
-        <h3>I'm Ruth Joy Tolentino</h3>
-        <h4>As Frontend Web Developer </h4>
-        <p>Are you looking for a <strong>Web developer</strong> who produces exceptional work and can make a significant impact on your project? As a self-starter with favorable experience, you can count on my commitment to your success. I love working with a team.</p>
-      </div> 
-        <div>
-          <a href="/images/Ruth Joy Tolentino Resume.svg" target="_blank">
-            <button class="button">Get Started</button>
-          </a> 
-        </div>      
-    </section>
-  
     <!----Skill Section-->
-  
   
       <section class="skills" id="skills">
         <div class="skill">
@@ -87,13 +80,10 @@
       <div class="projects-container">
         <div class="project">
           <div class="project-img-container">
-            <img src="https://placeimg.com/250/200/any" />
+            <img src="/images/Create website.svg" />
           </div>
-          <h5>Design Portfolio</h5>
-          <div class="project-tech">
-            <p>HTML</p>
-            <p>CSS</p>
-          </div>
+          <h5>Create Website</h5>
+
           <div class="project-links">
             <a href="#">View Project</a>
             <a href="#">View Code</a>
@@ -103,13 +93,10 @@
       
         <div class="project">
           <div class="project-img-container">
-            <img src="https://placeimg.com/250/200/any" />
+            <img src="/images/Create a project.svg" />
           </div>
-          <h5>E-Learning Landing Page</h5>
-          <div class="project-tech">
-            <p>HTML</p>
-            <p>CSS</p>
-          </div>
+          <h5>ToDO Web App</h5>
+         
           <div class="project-links">
             <a href="#">View Project</a>
             <a href="#">View Code</a>
@@ -119,14 +106,10 @@
       
         <div class="project">
           <div class="project-img-container">
-            <img src="https://placeimg.com/250/200/any" />
+            <img src="/images/Web design.svg" />
           </div>
-          <h5>Todo Web App</h5>
-          <div class="project-tech">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-          </div>
+          <h5>Web Design/h5>
+        
           <div class="project-links">
             <a href="#">View Project</a>
             <a href="#">View Code</a>
@@ -134,57 +117,7 @@
         </div>
       
       
-        <div class="project">
-          <div class="project-img-container">
-            <img src="https://placeimg.com/250/200/any" />
-          </div>
-          <h5>Entertainment Web App</h5>
-          <div class="project-tech">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-          </div>
-          <div class="project-links">
-            <a href="#">View Project</a>
-            <a href="#">View Code</a>
-          </div>
-        </div>
-      
-      
-        <div class="project">
-          <div class="project-img-container">
-            <img src="https://placeimg.com/250/200/any" />
-          </div>
-          <h5>Memory Game</h5>
-          <div class="project-tech">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-          </div>
-          <div class="project-links">
-            <a href="#">View Project</a>
-            <a href="#">View Code</a>
-          </div>
-        </div>
-      
-      
-        <div class="project">
-          <div class="project-img-container">
-            <img src="https://placeimg.com/250/200/any" />
-          </div>
-          <h5>Art Gallery Showcase</h5>
-          <div class="project-tech">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-          </div>
-          <div class="project-links">
-            <a href="#">View Project</a>
-            <a href="#">View Code</a>
-          </div>
-        </div>
-      
-    </section>
+        
 
     <footer>
       <section class="contact" id="contact Me">
@@ -201,7 +134,7 @@
 
 
       <div class="footer-nav">
-        <h1>adamkeyes</h1>
+        <h1>RJ</h1>
         <nav>
           <ul class="nav-menu">
             <li>
@@ -225,8 +158,23 @@
   <script>
     src="https://kit.fontawesome.com/7520d132f7.js"
     crossorigin="anonymous"
+
+    const mobileNav = document.querySelector('.mobile-nav')
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+    const closeBtn = document.querySelector('.close-btn')
+
+    mobileNav.addEventListener('click',(e)=>{
+        navlinks.classList.toggle('mobile-menu')
+        if(e.target === menuBtn){
+            menuBtn.replaceWith(closeBtn)
+            closeBtn.style.display = 'block'
+        }
+        if(e.target === closeBtn){
+            closeBtn.replaceWith(menuBtn)
+        }
+    })
   </script>
-  <script type="text/javascript" src="js/script.js"></script>
-    
+     
 </body>
 </html>
