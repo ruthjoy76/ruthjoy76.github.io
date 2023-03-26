@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 /* Header Section */
@@ -54,13 +55,13 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .home-content {
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 .home-content h2 {
   font-size: 48px;
@@ -90,11 +91,11 @@ span {
 
 .home-content p {
   max-width: 100%;
-  font-size: 18px;
+  font-size: 15px;
   color: #F5EBEB;
   font-weight: 300;
   text-align: center;
-  line-height: 24px;
+  line-height: 1.2;
   margin-bottom: 20px;
   align-items: center; 
 }
@@ -131,112 +132,161 @@ span {
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
 
-  .home {
-    position: relative;
-    display: grid;
-    width: 100%;
-    height: 60vh;
-    margin-left: 5%;
-    background: url(/images/Home.svg);
-    background-size: cover;
-    background-position: right;   
+  .logo h1 {
+    position: absolute;
+    font-size: 32px;
+    top: 20px;
   }
-  
 
-  .home-content {
-    align-items: flex-start;
-    gap: 0.5em;
-    flex: 1;
-    
+  .navbar {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 70px;
+    color: whitesmoke;
+  }
+
+  header {
+    width: 100%;
+    height: 90vh;
+    background-image: url('/images/Home.svg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .home-content h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-left: 20px;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #F5EBEB;
+    margin-bottom: 20px;
   }
   
   .home-content h3 {
-    font-size: 22px;
-    text-align: center;
-    margin-left: 20px;
+    font-size: 32px;
+    color: #F5EBEB;
+    font-weight: 400;
+    line-height: 32px;
   }
   
   .home-content h4 {
-    font-size: 14px;
-    text-align: center;
-    margin-left: 20px;
+    font-size: 22px;
+    color: #F5EBEB;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 30px;
   }
-  
 
   .home-content p {
-    text-align: left;
-    font-size: 0.75em; 
-    margin-left: 20px;
+    max-width: 100%;
+    font-size: 18px;
+    color: #F5EBEB;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    align-items: center; 
+  }
+
+  .nav-links .ctn {
+    display: inline-block;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #867070;
+    cursor: pointer;
+  }
+  
+  .nav-links .ctn:hover {
+    background-color: #D5B4B4;
+    color:#000000;
+    transform: scale(1.1);
   }
   
 }
 
 @media screen and (min-width: 961px) {
-  
-  .home {
-    position: relative;
-    display: grid;
-    width: 95%;
-    height: 80vh;
-    margin-left: 5%;
-    background: url(/images/Homepage.svg);
-    background-size: cover;
-    background-position: center;   
+  .logo h1 {
+    position: absolute;
+    font-size: 32px;
+    top: 20px;
   }
-  
-  .home-content {
-    align-items: center;
-    gap: 2em;
-    width: 50%;
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 100px;
+    color: whitesmoke;
   }
+
 
   .home-content h2 {
-    text-align: left;
-    font-size: 5em;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #F5EBEB;
+    margin-bottom: 20px;
   }
-
+  
   .home-content h3 {
-    text-align: left;
-    font-size: 2em;
+    font-size: 32px;
+    color: #F5EBEB;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 10px;
   }
-
+  
   .home-content h4 {
-    text-align: left;
-    font-size: 2em;
+    font-size: 24px;
+    color: #F5EBEB;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 50px;
   }
 
   .home-content p {
-    text-align: left;
-    font-size: 1.5em;
+    max-width: 50%;
+    font-size: 22px;
+    color: #F5EBEB;
+    text-align: center;
     line-height: 1.2;
+    margin-bottom: 20px;
+    align-items: center; 
   }
 
-  .button {
-    color: #fff;
-    font-size: 18px;
+  .nav-links .ctn {
+    display: inline-block;
+    color: #000000;
+    font-size: 12px;
     font-weight: bold;
     text-decoration: none;
-    padding: 12px 28px;
+    padding: 5px 18px;
     border: none;
-    border-radius: 40px;
-    background-color: #000000;
+    border-radius: 25px;
+    background-color: #867070;
     cursor: pointer;
-  
-  
-  
   }
   
-  .button:hover {
+  .nav-links .ctn:hover {
     background-color: #D5B4B4;
-    color: #fff;
+    color:#000000;
+    transform: scale(1.1);
   }
   
+ 
 }
 
 /* Skills Section */
@@ -247,7 +297,7 @@ span {
   gap: 1em;
   margin-bottom: 1em;
   background-color: #F5EBEB;
-  padding: 20px;
+  padding: 0;
 }
 
 .skill {
@@ -258,11 +308,12 @@ span {
   gap: 1em;
 }
 
-.skill-img-container {
-  padding-top: 10px;
+.skill-img-container img {
+  padding-top: 0px;
+  font-size: small;
 }
 
-.skills h6 {
+.skills h1 {
   color: #867070;
   font-size: 1em;
   text-align: center;
@@ -275,20 +326,18 @@ span {
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .skills {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1em;
+    gap: 1em;
+    margin-bottom: 1em;
+    background-color: #F5EBEB;
+    padding: 30px;
   }
-
-  .skill {
-    align-items: center;
-  }
-
-  .skill h3 {
-    font-size: 1em;
-  }
-
-  .skill p {
-    font-size: .75em;
+   
+  .skills h1 {
+    color: #867070;
+    font-size: 1.5em;
+    text-align: center;
   }
 }
 
@@ -296,37 +345,19 @@ span {
   .skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
-    text-align: center;
-    margin-bottom: 3em;
-    padding: 70px;
-}
-
+    gap: 1em;
+    margin-bottom: 1em;
+    background-color: #F5EBEB;
+    padding: 20px;
   }
-
-  .skill {
-    align-items: center;
-  }
-
-  .skill-img-container {
-    padding-top: 20px;
-  }
-
-  h5 {
+  .skills h1 {
     color: #867070;
     font-size: 2em;
     text-align: center;
-    align-items: center;
-    background-color: #000000;
   }
   
-  .skills h6 {
-    font-size: 2em; 
   }
-
-  .skills p {
-    font-size: 1em;
-  }
+  
 
 
 /* Projects Section */
@@ -339,16 +370,12 @@ span {
   margin-bottom: 3em;
 }
 
-.projects-header {
-  display: flex;
-  justify-content: center;
+.projects-header h1 {
+  color: #867070;
+  font-size: 2em;
   text-align: center;
   align-items: center;
-}
 
-h7 {
-  color: #867070;
-  font-size: 3em;
 }
 
 .project {
@@ -361,31 +388,10 @@ h7 {
   width: 100%;
 }
 
-h8 {
+.projects h2 {
   font-size: 1.25em;
   text-transform: uppercase;
   text-align: center;
-}
-
-.project-tech {
-  display: flex;
-  font-size: 1em;
-  gap: 1em;
-}
-
-.project-links {
-  display: flex;
-  gap: 2em;
-}
-
-.project-links a {
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #64daa6;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 601px) {
@@ -394,6 +400,172 @@ h8 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
+  .projects h1 {
+    color: #867070;
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+  }
+  
+  }
+
+/*Testimonial Section */
+
+.testimonials {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.testimonials-header {
+  display: inline-block;
+  position: relative;
+  padding: 6px;
+  width: 100%;
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.testimonials h1 {
+  font-size: 2em;
+  color: #867070;
+  align-items: center;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;  
+}
+
+.testimonial-container .testimonial {
+  position: relative;
+  width: 300px;
+  color: #000000;
+  background: #F5EBEB;
+  margin: 20px 10px;
+  padding: 30px 30px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.testimonial-container .testimonial .profile {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10%;
+  width: 100%;
+}
+
+.testimonial-container  h2 {
+  padding: 2px 0;
+  color: #000000;
+  letter-spacing: 0.2px;
+  text-align: center;
+  align-items: center;
+}
+
+.testimonial-container .testimonial h3 {
+  padding: 2px 0;
+  text-transform: capitalize;
+  color: #867070;
+  letter-spacing: 0.2px;
+  text-align: center;
+  align-items: center;
+}
+
+.testimonial-container .testimonial p {
+  margin-top: 50px;
+  color: #000000;
+  padding: 0 8px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.testimonial-container .testimonial .left {
+  display: block;
+  font-size: 30px;
+  text-align: left;
+  color: #867070;
+}
+
+.testimonial-container .testimonial .right {
+  display: block;
+  font-size: 30px;
+  text-align: right;
+  color: #867070;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;  
+  }  
+
+}
+
+@media screen and (min-width: 961px) {
+  
+  .testimonials {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .testimonials-header {
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+    width: 100%;
+    color: #000000;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .testimonials h1 {
+    font-size: 2em;
+    color: #867070;
+    align-items: center;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;  
+  }
+  
+  .testimonial-container .testimonial {
+    position: relative;
+    width: 300px;
+    color: #000000;
+    background: #F5EBEB;
+    margin: 20px 10px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+  }
+  
+  .testimonial-container .testimonial .profile {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    width: 100%;
+  }
+  
 }
 
 /* Contact Section */
@@ -404,7 +576,7 @@ footer {
   right: 0;
   height: auto;
   width: 100vw;
-  padding-top: 40px;
+  padding-top: 10px;
   color: #F5EBEB;
   background: #000000;
 }
@@ -417,21 +589,21 @@ footer {
   text-align: center;
 }
 
-.footer-nav h9 {
+.footer-nav h1 {
   color: #F5EBEB;
   font-size: 2em;
   font-weight: 400;
   line-height: 1.2;
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer-nav p {
   max-width: 500px;
   color: #F5EBEB;
   text-align: center;
-  font-size: 1em;
+  font-size: 12px;
   line-height: 1.2;
-  padding: 10px;
+  padding: 1px;
 }
 
 .social-links {
@@ -482,70 +654,23 @@ footer {
   }
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 961px) {}
  
-  .contact-details {
-    align-items: start;
-    width: 80%;
-  }
 
-  h6 {
-    font-size: 4em;
-  }
-
-  .contact-details p {
-    text-align: left;
-    font-size: 1.5em;
-  }
-  .button {
-    align-self: end;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border: none;
-    border-bottom: 2px solid #64daa6;
-    font-weight: bold;
-    background-color: transparent;
-    cursor: pointer;
-    
-    position: relative;
-    overflow: hidden;
-    outline: none;
-    margin-top: 2em;
-  }
-}
 
 /* Footer Nav */
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
   
 
-  .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 1.5em;
-  }
+ 
 }
 
-@media screen and (min-width: 961px) {
-  .footer-nav {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2em;
-  }
-
-  .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 1.5em;
-  }
-}
+@media screen and (min-width: 961px) {}
+ 
 
 /* Mobile device */
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:450px) {
   .menu-btn {
     display: block;
 }
