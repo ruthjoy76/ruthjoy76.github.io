@@ -438,7 +438,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;  
+  width: 100%; 
 }  
 
 .testimonial-container .testimonial {
@@ -496,6 +496,7 @@ span {
     gap: 1em;
     margin-bottom: 1em;
     padding: 1px;
+    
   }
 
 }
