@@ -13,7 +13,7 @@
 
 a {
   text-decoration: none;
-  color: #F5EBEB;
+  color: #800ff0;
 }
 ul {
   list-style: none;
@@ -34,7 +34,7 @@ ul {
   width: 100%;
   justify-content: space-between;
   padding: 20px;
-  color: whitesmoke;
+  color: #800ff0;
 }
 .nav-links {
   display: flex;
@@ -42,13 +42,13 @@ ul {
 }
 .nav-links li {
   margin: 0 30px;
-  color: #F5EBEB;
+  color: #800ff0;
 }
 
 header {
   width: 100%;
   height: 90vh;
-  background-image: url('/images/Home.svg');
+  background: #ffffff;
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -66,33 +66,33 @@ header {
 .home-content h2 {
   font-size: 48px;
   line-height: 1.2;
-  color: #F5EBEB;
+  color: #000000;
   margin-bottom: 20px;
 }
 
 .home-content h3 {
   font-size: 22px;
-  color: #F5EBEB;
+  color: #000000;
   font-weight: 400;
   line-height: 32px;
 }
 
 .home-content h4 {
   font-size: 14px;
-  color: #F5EBEB;
+  color: #000000;
   font-weight: 400;
   line-height: 18px;
   margin-bottom: 30px;
 }
 
 span {
-  color:  #867070;
+  color:  #800ff0;
 }
 
 .home-content p {
   max-width: 100%;
   font-size: 15px;
-  color: #F5EBEB;
+  color: #000000;
   font-weight: 300;
   text-align: center;
   line-height: 1.2;
@@ -109,19 +109,19 @@ span {
   padding: 10px 18px;
   border: none;
   border-radius: 25px;
-  background-color: #867070;
+  background-color: #4caeff;
   cursor: pointer;
 }
 
 .ctn:hover {
-  background-color: #D5B4B4;
-  color:#000000;
+  background-color: #800ff0;
+  color:#fff;
   transform: scale(1.1);
 }
 
 .menu-btn,.close-btn{
   position: absolute;
-  color: #F5EBEB;
+  color: #800ff0;
   top: 30px;
   right: 30px;
   width: 30px;
@@ -153,9 +153,7 @@ span {
   header {
     width: 100%;
     height: 90vh;
-    background-image: url('/images/Home.svg');
-    background-position: bottom;
-    background-size: cover;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,20 +162,20 @@ span {
   .home-content h2 {
     font-size: 48px;
     line-height: 1.2;
-    color: #F5EBEB;
+    color: #000000;
     margin-bottom: 20px;
   }
   
   .home-content h3 {
     font-size: 32px;
-    color: #F5EBEB;
+    color: #000000;
     font-weight: 400;
     line-height: 32px;
   }
   
   .home-content h4 {
     font-size: 22px;
-    color: #F5EBEB;
+    color: #000000;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 30px;
@@ -186,7 +184,7 @@ span {
   .home-content p {
     max-width: 100%;
     font-size: 18px;
-    color: #F5EBEB;
+    color: #000000;
     text-align: center;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -202,13 +200,13 @@ span {
     padding: 5px 18px;
     border: none;
     border-radius: 25px;
-    background-color: #867070;
+    background-color: #4caeff;
     cursor: pointer;
   }
   
   .nav-links .ctn:hover {
-    background-color: #D5B4B4;
-    color:#000000;
+    background-color: #800ff0;
+    color:#ffffff;
     transform: scale(1.1);
   }
   
@@ -217,6 +215,7 @@ span {
 @media screen and (min-width: 961px) {
   .logo h1 {
     position: absolute;
+    color: #800ff0;
     font-size: 32px;
     top: 20px;
   }
@@ -230,20 +229,20 @@ span {
     justify-content: space-between;
     padding: 20px;
     padding-left: 100px;
-    color: whitesmoke;
+    color: #800ff0;
   }
 
 
   .home-content h2 {
     font-size: 48px;
     line-height: 1.2;
-    color: #F5EBEB;
+    color: #000000;
     margin-bottom: 20px;
   }
   
   .home-content h3 {
     font-size: 32px;
-    color: #F5EBEB;
+    color: #000000;
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 10px;
@@ -251,7 +250,7 @@ span {
   
   .home-content h4 {
     font-size: 24px;
-    color: #F5EBEB;
+    color: #000000;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 50px;
@@ -260,7 +259,7 @@ span {
   .home-content p {
     max-width: 50%;
     font-size: 22px;
-    color: #F5EBEB;
+    color: #000000;
     text-align: center;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -276,13 +275,13 @@ span {
     padding: 5px 18px;
     border: none;
     border-radius: 25px;
-    background-color: #867070;
+    background-color: #4caeff;
     cursor: pointer;
   }
   
   .nav-links .ctn:hover {
-    background-color: #D5B4B4;
-    color:#000000;
+    background-color: #800ff0;
+    color:#ffffff;
     transform: scale(1.1);
   }
   
@@ -296,7 +295,7 @@ span {
   grid-template-columns: repeat(1, 1fr);
   gap: 1em;
   margin-bottom: 1em;
-  background-color: #F5EBEB;
+  background-color: #ffffff;
   padding: 0;
 }
 
@@ -314,7 +313,7 @@ span {
 }
 
 .skills h1 {
-  color: #867070;
+  color: #4caeff;
   font-size: 1em;
   text-align: center;
 }
@@ -330,12 +329,12 @@ span {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     margin-bottom: 1em;
-    background-color: #F5EBEB;
+    background-color: #ffffff;
     padding: 30px;
   }
    
   .skills h1 {
-    color: #867070;
+    color: #4caeff;
     font-size: 1.5em;
     text-align: center;
   }
@@ -347,11 +346,11 @@ span {
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     margin-bottom: 1em;
-    background-color: #F5EBEB;
+    background-color: #ffffff;
     padding: 20px;
   }
   .skills h1 {
-    color: #867070;
+    color: #4caeff;
     font-size: 2em;
     text-align: center;
   }
@@ -369,7 +368,7 @@ span {
 }
 
 .projects-header h1 {
-  color: #867070;
+  color: #800ff0;
   font-size: 2em;
   text-align: center;
   align-items: center;
@@ -399,7 +398,7 @@ span {
     gap: 2em;
   }
   .projects h1 {
-    color: #867070;
+    color: #800ff0;
     font-size: 3em;
     text-align: center;
     align-items: center;
@@ -422,7 +421,7 @@ span {
   position: relative;
   padding: 6px;
   width: 100%;
-  color: #000000;
+  color: #800ff0;
   font-size: 1.5em;
   text-align: center;
   font-weight: 600;
@@ -430,7 +429,7 @@ span {
 
 .testimonials h1 {
   font-size: 2em;
-  color: #867070;
+  color: #000000;
   align-items: center;
 }
 
@@ -445,7 +444,7 @@ span {
   position: relative;
   width: 300px;
   color: #000000;
-  background: #F5EBEB;
+  background: #4caeff;
   margin: 20px 10px;
   padding: 30px 30px;
   border-radius: 15px;
@@ -463,7 +462,7 @@ span {
 .testimonial h3 {
   padding: 2px 0;
   text-transform: capitalize;
-  color: #867070;
+  color: #000000;
   letter-spacing: 0.2px;
   text-align: center;
   align-items: center;
@@ -510,7 +509,7 @@ footer {
   height: auto;
   width: 100vw;
   padding-top: 20px;
-  color: #F5EBEB;
+  color: #ffffff;
   background: #000000;
 }
 
@@ -523,7 +522,7 @@ footer {
 }
 
 .footer-nav h1 {
-  color: #F5EBEB;
+  color: #ffffff;
   font-size: 2em;
   font-weight: 400;
   line-height: 1.2;
@@ -532,7 +531,7 @@ footer {
 
 .footer-nav p {
   max-width: 500px;
-  color: #F5EBEB;
+  color: #ffffff;
   text-align: center;
   font-size: 12px;
   line-height: 1.2;
@@ -553,7 +552,7 @@ footer {
 
 .social-links a {
   text-decoration: none;
-  color: #F5EBEB;  
+  color: #ffffff;  
 }
 
 .social-links a i{
@@ -562,11 +561,11 @@ footer {
 }
 
 .social-links a:hover i {
-  color: #867070;  
+  color: #800ff0;  
 }
 
 .footer-bottom {
-  background: #D5B4B4;
+  background: #800ff0;
   width: 100vw;
   padding: 20px 0;
   text-align: center;
@@ -628,7 +627,7 @@ footer {
     width: 100%;
     height: 100vh;
     justify-content: center;
-    background: #867070;
+    background: #800ff0;
     margin-top: -900px;
     transition: all 0.5s ease;
 }
@@ -652,7 +651,7 @@ img:hover {
 }
 
 li:hover {
-  color: #fc036b;
+  color: #000000;
   cursor: pointer;
 }
   
