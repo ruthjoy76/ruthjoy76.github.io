@@ -1,5 +1,7 @@
 ## My Personal Portfolio Website
 
+![Screenshot (24)](https://user-images.githubusercontent.com/126475991/229354982-fd7edafd-9e51-4d28-bea3-6287b43069bb.png)
+
 The purpose of this personal portfolio website is to apply all the lesson that I've learned in 
 ## KodeGo
 
@@ -20,3 +22,10 @@ You can check the website at: https://ruthjoy76.github.io
 - html
 - CSS
 - Javascript
+
+
+
+
+
+
+
