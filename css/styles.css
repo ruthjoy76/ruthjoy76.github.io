@@ -437,9 +437,6 @@ nav .main ul li a:hover{
 
 /*header*/
 
-.social{
-  display: none;
-}
 
 .header-container{
   grid-template-columns: 1fr;
@@ -498,10 +495,6 @@ img{
 /* testimonial */
 .testimonial-container{
   width:80%; 
-}
-.footer-bottom {
-  font-size: 12px;
-  word-spacing: 1px;
 }
   
 }
