@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --color-primary: #4caecf;
+  --color-primary-variant: rgba(115, 89, 260, 0.1);;
+  --color-black: #0F0F0F;
+  --color-on-black: #000000;
+  --color-black-variant: rgba(20, 20, 20, 0.8);;
+  --color-white: #FFFFFF;
+  --color-light: #999999;
+  --transition: .4s ease;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 26px;
+  border: 1px solid var(--color-white);
+  font-weight: 400;
+  line-height: 24px;  
+  color: white;
+  align-items: center;  
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-white)
+}
+
+.btn-primary:hover {
+  background: none;
+}
+
+.main {
+  max-width: 1320px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.text-light {
+  color: var(--color-light);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+span {
+  color: var(--color-primary);
+}
+
+#Contacts{
+  position: relative;
+  background: var(--color-black);
+  padding-bottom: 2rem; 
+}
+
+.contact-container h2{
+  padding-top: 120px; 
+  text-align: center;
+  color: var(--color-white);   
+  margin-bottom: 90px;
+}
+.contact-content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+.contact-box{
+  background: var(--color-black-variant);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  box-shadow: 0 0 .3rem var(--color-on-black);
+}
+.contact-box .btn{
+  width: fit-content;
+}
+.contact-box img{
+  width: 100%;
+  display: block;
+  align-items: center;
+  background: transparent;
+
+}
+
+.contact-box:hover{
+  box-shadow: 0 0 .3rem var(--color-primary);
+}
+
+.contact-container h4{
+  padding-top: 1em; 
+  text-align: left;
+  color: var(--color-white);   
+  margin-bottom: 5px;
+}
+
+.contact-container p{
+  padding-top: 1em; 
+  text-align: left;
+  color: var(--color-white);
+  font-size: 12px;   
+  margin-bottom: 5px;
+}
+
+@media (max-width:1200px) {
+
+      
+.contact-cotainer h2{
+  padding-top: 20px;         
+  margin-bottom: 10px;       
+}
+
+.contact-content{        
+  grid-template-columns: repeat(2,1fr);       
+}
+  
+}
+  
+@media (max-width:768px) {
+   
+/* project*/      
+  
+.contact-content{        
+  grid-template-columns: 1fr;       
+}
+   
+}
+  

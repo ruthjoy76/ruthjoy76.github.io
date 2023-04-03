@@ -41,7 +41,7 @@
   background: none;
 }
 
- .nav-btn {
+.nav-btn {
   border: 1.5px solid var(--color-primary);
   color: var(--color-primary);
 } 
@@ -51,7 +51,7 @@
   color: var(--color-white);
 }
 
-.container {
+.main {
   max-width: 1320px;
   width: 90%;
   margin: 0 auto;
@@ -118,7 +118,7 @@ nav{
 }
 .nav-container ul li a{
   font-size: 14px;
-  color: white;
+  color: var(--color-white);
 }
 .nav-container ul li a:hover{
   color: var(--color-primary);
@@ -219,12 +219,6 @@ span {
   position: relative;
   background: var(--color-black);
   padding-bottom: 2rem; 
-}
-.project-text-img{
-  position: absolute;
-  display: block;
-  object-fit: cover;  
-  margin-top: 60px;    
 }
 
 .project-container h2{
@@ -370,18 +364,6 @@ footer {
   color: var(--color-primary);  
 }
 
-.footer-bottom {
-  background: var(--color-black-variant);
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-bottom {
-  font-size: 14px;
-  word-spacing: 2px;
-}
-
 .footer-links {
   display: flex;
   justify-content: center;
@@ -396,7 +378,7 @@ footer {
   color:var(--color-white); 
   font-size: 12px;
 }
-.phone-button{
+.menu-button{
   display: none;
 }
 
@@ -419,7 +401,7 @@ h3 {
 }   
    /*nav*/
      
-nav .container ul {
+nav .main ul {
   position: absolute;
   flex-direction: column;
   gap: 0;
@@ -434,38 +416,34 @@ nav .container ul {
   overflow: hidden;  
   left: -270px;   
 }
-nav .container ul li a{        
+nav .main ul li a{        
   display: inline-block; 
   padding: 24px 250px;   
   border: none;      
 }
 
-nav .container ul li a:hover{
+nav .main ul li a:hover{
   background: var(--color-white);
   margin-left: 2rem;
 }
 
-.phone-button{
+.menu-button{
   display: block;
 }
 
-.phone-button .open,
-.phone-button .close{
+.menu-button .open,
+.menu-button .close{
   color: var(--color-primary);
   font-size: 20px;
 }
 
-.phone-button .close{
+.menu-button .close{
   display: none;
 }
 
 /*header*/
 
 .social{
-  display: none;
-}
-
-.project-text-img, .skill-img-text{
   display: none;
 }
 
@@ -527,12 +505,16 @@ img{
 .testimonial-container{
   width:80%; 
 }
+.footer-bottom {
+  font-size: 12px;
+  word-spacing: 1px;
+}
   
 }
   
 @media (max-width:768px) {
    
-  /* header */
+/* header */
 .header{
   padding-top: 10rem;
 }
@@ -560,6 +542,7 @@ h1{
 .project-content{        
   grid-template-columns: 1fr;       
 }
+
    
 }
   
