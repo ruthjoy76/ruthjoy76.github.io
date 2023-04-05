@@ -201,11 +201,21 @@ span {
   align-self: center;
   gap: 2em;
 }
-.skill-content img{
+.skill-content-img{
   width: 100%;
 }
-.skill-content img:hover{
+.skill-content-img:hover{
   transform: rotate(5deg);
+}
+
+.skill-content-img  h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  gap: 2em;
+
+background: green;
 }
 
 /* PROJECT  SECTION*/
@@ -444,8 +454,9 @@ nav .main ul li a:hover{
 }
 
 .header-right{
-  margin: 0 auto;
   grid-row: 1;
+  margin-top: 2px 2px;
+  
 }
 
 img{
