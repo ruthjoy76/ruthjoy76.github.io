@@ -186,7 +186,7 @@ span {
   background: var(--color-black);
   padding-top: 0.25em ;
   position: relative;
-  background: green;
+  background: var(--color-black);
 }
 
 .skills-container h2{
