@@ -186,6 +186,7 @@ span {
   background: var(--color-black);
   padding-top: 0.25em ;
   position: relative;
+  background: green;
 }
 
 .skills-container h2{
@@ -201,8 +202,9 @@ span {
   align-self: center;
   gap: 2em;
 }
-.skill-content-img{
+.skill-content img{
   width: 100%;
+
 }
 .skill-content-img:hover{
   transform: rotate(5deg);
@@ -212,10 +214,7 @@ span {
   display: flex;
   justify-content: center;
   text-align: center;
-  
   gap: 2em;
-
-background: green;
 }
 
 /* PROJECT  SECTION*/
