@@ -1,5 +1,6 @@
 ## My Personal Portfolio Website
 
+![Screenshot (326)](https://github.com/ruthjoy76/ruthjoy76.github.io/assets/126475991/7c80214a-1a17-4dd4-b3c4-c195b285ab5d)
 
 
 The purpose of this personal portfolio website is to apply all the lesson that I've learned in 
